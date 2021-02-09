@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokédex</title>
+    <!-- reset.css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- homemade css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Récupération de la police Bree Serif -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="navigationBar">
+            <a class="sitename" href="/">Pokedex</a>
+            <!-- on met le formulaire en GET et pas en POST, pour pouvoir partager des urls de recherche (le/les termes recherchés seront visibles dans l'url, et donc partageable!) -->
+            <form action="/search" method="GET">
+                <input type="search" name="search" id="search" placeholder="Rechercher par nom">
+                <input type="submit" value="🔍">
+            </form>
+            <a href="#">Liste Types</a>
+        </nav>
+
+    </header>
+
+    <main class="main">
+        <div class="details">
+            <header class="title">Détails de Bulbizarre</header>
+            <main class="infos">
+                <img src="../img/1.png" alt="">
+                <div class="caracteristiques">
+                    <header>
+                        <div class="name">Bulbizarre</div>
+                        <div class="types">
+                            <p class="type">type1</p>
+                            <p class="type">type2</p>
+                        </div>
+                    </header>
+                    <main>
+                        <table class="statistiques">
+                            <thead class="titleTable">
+                                <tr>
+                                    <th>Statistiques</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="stat">
+                                    <td class="nomStat">PV</td>
+                                    <td class="valueStat">60</td>
+                                    <td class="statBar">barre</td>
+                                </tr>
+                                <tr class="stat">
+                                    <td class="nomStat">Attaque</td>
+                                    <td class="valueStat">60</td>
+                                    <td class="statBar">barre</td>
+                                </tr>
+                                <tr class="stat">
+                                    <td class="nomStat">Défense</td>
+                                    <td class="valueStat">60</td>
+                                    <td class="statBar">barre</td>
+                                </tr>
+                                <tr class="stat">
+                                    <td class="nomStat">PV</td>
+                                    <td class="valueStat">60</td>
+                                    <td class="statBar">barre</td>
+                                </tr>
+                                <tr class="stat">
+                                    <td class="nomStat">PV</td>
+                                    <td class="valueStat">60</td>
+                                    <td class="statBar">barre</td>
+                                </tr>
+                                <tr class="stat">
+                                    <td class="nomStat">PV</td>
+                                    <td class="valueStat">60</td>
+                                    <td class="statBar">barre</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </main>
+
+                </div>
+            </main>
+            <footer class="return">
+                <a class="sitename" href="/">Revenir à la liste</a>
+            </footer>
+
+        </div>
+    </main>
+    <footer class="footer">
+    </footer>
+</body>
+
+</html>
