@@ -78,6 +78,7 @@ body {
     width: 40%;
     margin: 0.2em;
     padding: 0.3em;
+    border-radius: 00.5em;
 }
 
 .name{
@@ -91,14 +92,14 @@ body {
 }
 
 .type{
-    background-color: #45cc39;
+    /* background-color: #45cc39; */
     border-radius: 0.2em; 
     margin: 0.1em;
-    padding: 0.2em;
+    padding: 0.3em;    
 }
 
 .statistiques{    
-    width: 100%;
+    width: 100%;    
 }
 
 .titleTable{

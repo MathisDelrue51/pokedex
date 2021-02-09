@@ -1,0 +1,66 @@
+<%- include('partials/header') %>
+<div class="details">
+    <header class="title">Détails de <%=pokemon.nom%>
+    </header>
+    <main class="infos">
+        <img src="../img/<%=pokemon.numero%>.png" alt="">
+        <div class="caracteristiques">
+            <header>
+                <div class="name">#<%=pokemon.numero%> <%=pokemon.nom%></div>
+                <div class="types">
+                    <p class="type" style="background-color:#<%=colorType1%>;"><%=type1%></p>
+                    <p class="type" style="background-color:#<%=colorType2%>;"><%=type2%></p>
+                </div>
+            </header>
+            <main>
+                <table class="statistiques">
+                    <thead class="titleTable">
+                        <tr>
+                            <th>Statistiques</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="stat">
+                            <td class="nomStat">PV</td>
+                            <td class="valueStat"><%=pokemon.pv%></td>
+                            <td class="statBar">barre</td>
+                        </tr>
+                        <tr class="stat">
+                            <td class="nomStat">Attaque</td>
+                            <td class="valueStat"><%=pokemon.attaque%></td>
+                            <td class="statBar">barre</td>
+                        </tr>
+                        <tr class="stat">
+                            <td class="nomStat">Défense</td>
+                            <td class="valueStat"><%=pokemon.defense%></td>
+                            <td class="statBar">barre</td>
+                        </tr>
+                        <tr class="stat">
+                            <td class="nomStat">Attaque Spé</td>
+                            <td class="valueStat"><%=pokemon.attaque_spe%></td>
+                            <td class="statBar">barre</td>
+                        </tr>
+                        <tr class="stat">
+                            <td class="nomStat">Défense Spé</td>
+                            <td class="valueStat"><%=pokemon.defense_spe%></td>
+                            <td class="statBar">barre</td>
+                        </tr>
+                        <tr class="stat">
+                            <td class="nomStat">Vitesse</td>
+                            <td class="valueStat"><%=pokemon.vitesse%></td>
+                            <td class="statBar">barre</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </main>
+
+        </div>
+    </main>
+    <footer class="return">
+        <a class="sitename" href="/">Revenir à la liste</a>
+    </footer>  
+
+</div>
+
+<%- include('partials/footer') %>

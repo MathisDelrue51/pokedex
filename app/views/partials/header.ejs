@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokédex</title>
+    <!-- reset.css -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <!-- homemade css -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Récupération de la police Bree Serif -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="navigationBar">
+            <a class="sitename" href="/">Pokedex</a>
+            <!-- on met le formulaire en GET et pas en POST, pour pouvoir partager des urls de recherche (le/les termes recherchés seront visibles dans l'url, et donc partageable!) -->
+            <form action="/search" method="GET">
+                <input type="search" name="search" id="search" placeholder="Rechercher par nom">
+                <input type="submit" value="🔍">
+            </form>
+            <a href="#">Liste Types</a>
+        </nav>
+
+    </header>
+
+    <main class="main">
